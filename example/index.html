@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>jQuery Placeholder Examples</title>
+		<script src="jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="jquery.placeholder.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		  // This plug-in adds the placeholder to all elements whose 'data-placeholder' attribute is set
+		  $(document).ready(function(){
+        $('#myform').placeholder();
+      });
+		</script>
+		<style>
+		  *{
+		    font-family: Tahoma,Serif;
+		    font-size: 14px;
+		  }
+		  p{ font-size: 16px; }
+		  label,
+	    input,
+	    textarea,
+	    select{
+		    display:block;
+		    line-height: 32px;
+		  }
+	    input,
+	    textarea,
+	    select{
+	      padding: 5px;
+	      width: 300px;
+      }
+		  fieldset{
+		    border: none;
+		    margin-bottom: 10px;
+		    padding: 0;
+		  }
+		  form{
+		    padding: 20px;
+		  }
+		</style>
+	</head>
+	<body>
+		<form id="myform" action="">
+		  <p>Usage example of jquery.placeholder.js</p>
+		  <fieldset>
+		    <label>Name</label>
+		    <input type="text" data-placeholder="Please enter your name" value="" />
+		  </fieldset>
+		  <fieldset>
+		    <label>Email</label>
+  	    <input type="email" data-placeholder="Please type your email" />
+  		</fieldset>
+		  <fieldset>
+		    <label>Password</label>
+  	    <input type="password" data-placeholder="Type your password" />
+  		</fieldset>
+		  <fieldset>
+		    <label>Comments</label>
+  	    <textarea data-placeholder="Please enter your comments"></textarea>
+  		</fieldset>
+		  <fieldset>
+		    <label>Country</label>
+  	    <select data-placeholder="Please select a country">
+  	      <option>Colombia</option>
+  	      <option>United States</option>
+  	      <option>Brazil</option>
+  	    </select>
+  		</fieldset>
+		</form>
+	</body>
+</html>
